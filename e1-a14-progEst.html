@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="vt" /> <br />
+    <button id="add" onclick="maiorFrase()">maior</button>
+    <button id="add" onclick="add()">add</button> <br />
+
+    <span id="exib"></span> <br />
+    <span id="exib1"></span>
+    <script>
+      vetor = [];
+      function add() {
+        vetor.push(document.getElementById("vt").value);
+        tVetor = vetor.lenght;
+        document.getElementById("exib").innerHTML = vetor;
+
+        maiorFrase();
+      }
+      function maiorFrase() {
+        let maiorFrase = vetor[0]; // inicializa com a primeira frase do vetor
+        for (let i = 1; i < vetor.length; i++) {
+          if (vetor[i].length > maiorFrase.length) {
+            maiorFrase = vetor[i];
+          }
+        }
+        document.getElementById("exib1").innerHTML = maiorFrase;
+      }
+    </script>
+  </body>
+</html>

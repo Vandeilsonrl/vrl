@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+}
+img {
+  width: 100%;
+  height: 150px;
+}
+nav {
+  display: inline-block;
+  border: solid 1px black;
+}
+
+
+h6 {
+  padding: 8px 5px;
+  font-size: 8px;
+  border-top: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-right: none;
+}
+
+div :hover{
+  color: white
+}
+
+nav :hover {
+  background-color: aqua;
+  color: white;
+}
+ a {
+  text-decoration: none;
+
+ }
+
+ article {
+  display: inline-block;
+  vertical-align: center;
+  font-size: 15px;
+  width: 100%;
+}
+section {
+  display: flex;
+}
+p {
+  margin: 5px 8px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 8px;
+}
+h4#city {
+  margin-top: 20px;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: tomato;
+}
+footer h1 {
+  width: 100%;
+  height: 10px;
+  font-size: 10px;
+  margin: auto;
+}
+footer {
+  height: 20px;
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 3%;
+}
+.cl {
+  color: white;
+}
+
+.cl1 {
+  color: black;
+}
+h1 {
+  font-size: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    width: 99%;
+    margin-left: 0px;
+    border-right: none;
+    border-left: none;
+    padding-left: 4px;
+  }
+
+   article {
+    display: inline-block;
+  }
+  p {
+    display: inline-block;
+    margin: 0;
+  }
+
+  header {
+    background-color: #000;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  h6 {
+    display: block;
+  }
+  img {
+    width: 0px;
+    height: 0px;
+  }
+
+  section {
+    display: inline-block;
+  }
+  
+  p {
+    margin-top: 8px;
+    padding: 5px;
+    font-size: 8px;
+  }
+
+  #n {
+    font-size: 25px;
+  }
+}
